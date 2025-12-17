@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Calendar</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1 style="text-align: center;background-color: beige;" >Be Productive</h1>
-    <div class="calendar-wrapper">
+    <h1 class="app-title">Be Productive 💪</h1>
+    <div class="app">
+
+        <!-- Calendar -->
         <div class="calendar">
             <div class="header">
                 <button id="prev">◀</button>
@@ -30,20 +32,21 @@
 
             <div class="dates" id="dates"></div>
         </div>
+
+        <!-- Tasks -->
+        <div class="task-section">
+            <div class="task-input">
+                <input id="taskAdd" type="text" placeholder="Enter task" />
+                <input id="timeAdd" type="text" placeholder="Enter time" />
+                <button id="btn" onclick="addTask()">Add Task</button>
+            </div>
+
+            <div id="tasks"></div>
+        </div>
+
     </div>
-    <div style="display: flex;flex-direction: column; gap: 5px; justify-content: center;align-items: center; margin-top: 5px;">
-        <input type="text" placeholder="enter task" id="taskAdd">
-        <input type="text" placeholder="enter time" id="timeAdd">
-        <button onclick="addTask();"  id="btn">submit</button>
-    </div>
 
-    <div id="tasks">
-
-    </div>
-
-
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
