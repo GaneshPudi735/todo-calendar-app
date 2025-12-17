@@ -1,0 +1,129 @@
+body {
+font-family: Arial, sans-serif;
+background: #84a0bb;
+min-height: 100vh;
+}
+ .calendar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;   /* optional spacing from top */
+}
+
+.calendar {
+background: #fff;
+width: 350px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+padding: 16px;
+}
+
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+
+.header h2 {
+margin: 0;
+font-size: 20px;
+}
+
+
+.header button {
+border: none;
+background: #007bff;
+color: #fff;
+padding: 6px 10px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+text-align: center;
+font-weight: bold;
+margin-bottom: 6px;
+}
+
+
+.dates {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+gap: 5px;
+}
+
+
+.date {
+padding: 10px;
+text-align: center;
+border-radius: 6px;
+cursor: pointer;
+}
+
+
+.date:hover {
+background: #e3f2fd;
+}
+
+
+.today {
+background: #007bff;
+color: #fff;
+font-weight: bold;
+}
+
+
+.inactive {
+color: #aaa;
+}
+#tasks>ol>li{
+    list-style: none;
+    color:black;
+    background-color: beige;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    
+}
+#tasks>ol{
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+#btn {
+    background-color: rgb(140, 224, 140);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: blue;   /* hover color */
+}
+#tasks {
+    max-height: 250px;   /* adjust as you like */
+    overflow-y: auto;
+}
+#dlt {
+    background-color: red;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    padding: 4px 10px;
+    transition: background-color 0.3s ease;
+}
+
+#dlt:hover {
+    background-color: darkred;
+}
+
